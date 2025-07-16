@@ -11,8 +11,14 @@ import {
   CheckCircle,
   ArrowRight
 } from "lucide-react";
+type Service = {
+  icon: string;
+  title: string;
+  description: string;
+  features: string[];
+};
 
-const ServicesSection = ({ services }) => (
+const ServicesSection = ({ services }: { services: Service[] }) => (
   <section className="py-20 bg-[#0A0F2E]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.div
