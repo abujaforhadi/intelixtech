@@ -27,7 +27,7 @@ const featuredPost = {
   readTime: "8 min read",
   category: "AI & Machine Learning",
   tags: ["AI", "SaaS", "Machine Learning", "Business Growth"],
-  image: "https://placehold.co/800x600/1e3a8a/ffffff?text=AI+Transformation",
+  image: "/assets/custom-dev-icon.jpg",
 };
 
 const allBlogPosts = [
@@ -42,7 +42,7 @@ const allBlogPosts = [
     readTime: "6 min read",
     category: "Cybersecurity",
     tags: ["Security", "Web Development", "Best Practices"],
-    image: "https://placehold.co/600x400/be123c/ffffff?text=Web+Security",
+  image: "/assets/custom-dev-icon.jpg",
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const allBlogPosts = [
     readTime: "5 min read",
     category: "Software Development",
     tags: ["Custom Dev", "Strategy", "ROI"],
-    image: "https://placehold.co/600x400/059669/ffffff?text=Custom+Software",
+  image: "/assets/custom-dev-icon.jpg",
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ const allBlogPosts = [
     readTime: "12 min read",
     category: "Architecture",
     tags: ["Microservices", "SaaS", "Scalability"],
-    image: "https://placehold.co/600x400/5b21b6/ffffff?text=Microservices",
+  image: "/assets/custom-dev-icon.jpg",
   },
   {
     id: 5,
@@ -81,7 +81,7 @@ const allBlogPosts = [
     readTime: "7 min read",
     category: "Mobile Development",
     tags: ["React Native", "Mobile", "Strategy"],
-    image: "https://placehold.co/600x400/d97706/ffffff?text=Mobile+Dev",
+  image: "/assets/custom-dev-icon.jpg",
   },
   {
     id: 6,
@@ -94,7 +94,7 @@ const allBlogPosts = [
     readTime: "10 min read",
     category: "Compliance",
     tags: ["GDPR", "Privacy", "SaaS"],
-    image: "https://placehold.co/600x400/0891b2/ffffff?text=GDPR",
+  image: "/assets/custom-dev-icon.jpg",
   },
   {
     id: 7,
@@ -107,7 +107,7 @@ const allBlogPosts = [
     readTime: "9 min read",
     category: "AI & Machine Learning",
     tags: ["Analytics", "AI", "BI"],
-    image: "https://placehold.co/600x400/7c3aed/ffffff?text=AI+Analytics",
+  image: "/assets/custom-dev-icon.jpg",
   },
 ];
 
