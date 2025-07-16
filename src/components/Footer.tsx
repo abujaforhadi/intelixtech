@@ -1,97 +1,142 @@
-import { Brain, Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
-import Link from "next/link"; 
+import {
+  BrainIcon,
+  GithubIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  MailIcon,
+  PhoneIcon,
+  MapPinIcon,
+} from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-gradient-to-b from-background to-muted border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-[#0A0F2E] border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-white">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Branding Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <Brain className="h-5 w-5 text-primary-foreground" />
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                <BrainIcon className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-heading font-bold text-gradient-primary">
-                IntelixTech
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                Intelix Tech Limited
               </span>
             </div>
-            <p className="text-muted-foreground mb-4 max-w-md">
-              Empowering businesses with innovative, secure, and AI-driven software solutions tailored to their unique needs.
+            <p className="text-slate-400 mb-4 max-w-md">
+              Empowering businesses with innovative, secure, and AI-driven software
+              solutions tailored to their unique needs.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
-                <Github className="h-5 w-5" />
-              </a>
+              <Link
+                href="https://www.linkedin.com/company/intelixtech"
+                className="text-slate-400 hover:text-purple-400 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <LinkedinIcon className="h-5 w-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-slate-400 hover:text-purple-400 transition-colors"
+                aria-label="Twitter"
+              >
+                <TwitterIcon className="h-5 w-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-slate-400 hover:text-purple-400 transition-colors"
+                aria-label="GitHub"
+              >
+                <GithubIcon className="h-5 w-5" />
+              </Link>
             </div>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-slate-400 hover:text-purple-400 transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-slate-400 hover:text-purple-400 transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-slate-400 hover:text-purple-400 transition-colors"
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="#"
+                  className="text-slate-400 hover:text-purple-400 transition-colors"
+                >
                   Blog
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Contact Info</h3>
-            <ul className="space-y-2">
-              <li className="flex items-center text-muted-foreground">
-                <Mail className="h-4 w-4 mr-2" />
+            <h3 className="font-semibold text-white mb-4">Contact Info</h3>
+            <ul className="space-y-2 text-slate-400">
+              <li className="flex items-center">
+                <MailIcon className="h-4 w-4 mr-2 text-blue-400" />
                 info@intelixtech.com
               </li>
-              <li className="flex items-center text-muted-foreground">
-                <Phone className="h-4 w-4 mr-2" />
-                +880 1306080440
+              <li className="flex items-center">
+                <PhoneIcon className="h-4 w-4 mr-2 text-blue-400" />
+                +880 1306-080440
               </li>
-              <li className="flex items-center text-muted-foreground">
-                <MapPin className="h-4 w-4 mr-2" />
+              <li className="flex items-center">
+                <MapPinIcon className="h-4 w-4 mr-2 text-blue-400" />
                 Dhaka, Bangladesh
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
-            © {currentYear} IntelixTech. All rights reserved.
+        {/* Bottom Bar */}
+        <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-slate-500 text-sm">
+            © {currentYear} Intelix Tech Limited. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            <Link
+              href="#"
+              className="text-slate-500 hover:text-purple-400 text-sm transition-colors"
+            >
               Privacy Policy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            </Link>
+            <Link
+              href="#"
+              className="text-slate-500 hover:text-purple-400 text-sm transition-colors"
+            >
               Terms of Service
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            </Link>
+            <Link
+              href="#"
+              className="text-slate-500 hover:text-purple-400 text-sm transition-colors"
+            >
               Cookie Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
