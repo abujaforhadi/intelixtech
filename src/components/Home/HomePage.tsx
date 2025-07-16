@@ -18,6 +18,7 @@ import heroImage from "@/assets/hero-ai-tech.jpg";
 import aiSaasIcon from "@/assets/ai-saas-icon.jpg";
 import customDevIcon from "@/assets/custom-dev-icon.jpg";
 import securityIcon from "@/assets/security-icon.jpg";
+import { ContainerTextFlip } from "../ui/container-text-flip";
 
 const HomePage = () => {
   const services = [
@@ -143,14 +144,17 @@ const HomePage = () => {
             >
               <div className="space-y-4">
                 <motion.h1
-                  className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight"
+                  className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold leading-tight"
                   initial={{ y: 30, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.4, duration: 0.8 }}
                 >
-                  Power Your Business with{" "}
-                  <span className="text-gradient-tech">AI-Driven SaaS</span> and
-                  Custom Software Solutions
+                  Power Your Business with 
+                  
+                  
+                  <ContainerTextFlip
+                    words={["AI-Driven SaaS", "Custom Software Solutions"]}
+                  />
                 </motion.h1>
                 <motion.p
                   className="text-lg md:text-xl text-muted-foreground max-w-2xl"

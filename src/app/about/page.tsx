@@ -1,4 +1,5 @@
 
+import Teams from "@/components/About/Teams";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -38,33 +39,7 @@ const About = () => {
     }
   ];
 
-  const teamMembers = [
-    {
-      name: "Alex Chen",
-      role: "CEO & AI Architect",
-      bio: "15+ years in AI and machine learning, former Principal Engineer at Google AI. PhD in Computer Science from Stanford.",
-      expertise: ["Machine Learning", "Neural Networks", "System Architecture"]
-    },
-    {
-      name: "Sarah Rodriguez",
-      role: "CTO & Security Expert",
-      bio: "Former cybersecurity lead at major financial institutions. Expert in secure software development and compliance frameworks.",
-      expertise: ["Cybersecurity", "GDPR/HIPAA Compliance", "DevSecOps"]
-    },
-    {
-      name: "Michael Johnson",
-      role: "Lead Full-Stack Developer",
-      bio: "10+ years building scalable web and mobile applications. Specialist in modern frameworks and cloud architectures.",
-      expertise: ["React/Node.js", "Cloud Architecture", "Mobile Development"]
-    },
-    {
-      name: "Emily Zhang",
-      role: "UX/UI Design Director",
-      bio: "Award-winning designer with expertise in creating intuitive interfaces for complex enterprise software systems.",
-      expertise: ["User Experience", "Interface Design", "Design Systems"]
-    }
-  ];
-
+  
   const stats = [
     { number: "50+", label: "Projects Delivered" },
     { number: "98%", label: "Client Satisfaction" },
@@ -185,41 +160,8 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Meet Our <span className="text-gradient-primary">Expert Team</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Our diverse team of experts brings together decades of experience in AI, 
-              software development, security, and design.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="card-tech hover-lift group text-center">
-                <CardContent className="p-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Users className="h-10 w-10 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
-                  <p className="text-secondary font-medium mb-3">{member.role}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
-                  <div className="space-y-1">
-                    {member.expertise.map((skill, skillIndex) => (
-                      <span key={skillIndex} className="inline-block bg-muted text-muted-foreground text-xs px-2 py-1 rounded-md mr-1">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
+       <Teams />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary-light">
