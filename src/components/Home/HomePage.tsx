@@ -436,7 +436,7 @@ const HomePage = () => {
                       ))}
                     </motion.div>
                     <p className="text-muted-foreground mb-4 italic">
-                      "{testimonial.content}"
+                      &ldquo;{testimonial.content}&rdquo;
                     </p>
                     <div>
                       <p className="font-semibold text-foreground">
@@ -476,38 +476,22 @@ const HomePage = () => {
             className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto"
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Let's build your next big idea together. Contact us today for a free
-            consultation and discover how our AI-powered solutions can
+            Let&apos;s build your next big idea together. Contact us today for a
+            free consultation and discover how our AI-powered solutions can
             accelerate your growth.
           </motion.p>
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                variant="secondary"
-                size="xl"
-                className="bg-white text-primary hover:bg-white/90"
-              >
-                Schedule a Consultation
-              </Button>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                variant="outline"
-                size="xl"
-                className="border-white  hover:text-primary"
-              >
-                View Our Portfolio
-              </Button>
-            </motion.div>
+            <Button size="lg" variant="secondaryOutline" className="mx-auto">
+              Contact Us
+            </Button>
           </motion.div>
         </div>
       </motion.section>
