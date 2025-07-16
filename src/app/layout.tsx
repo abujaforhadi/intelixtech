@@ -4,14 +4,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-
-<Script
-  id="ld-json"
-  type="application/ld+json"
-  strategy="afterInteractive"
->
+<Script id="ld-json" type="application/ld+json" strategy="afterInteractive">
   {JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -21,10 +16,10 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
     description: "AI-powered SaaS & custom software development company.",
     sameAs: [
       "https://www.linkedin.com/company/intelixtech",
-      "https://facebook.com/intelixtech"
-    ]
+      "https://facebook.com/intelixtech",
+    ],
   })}
-</Script>
+</Script>;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,7 +36,8 @@ export const metadata: Metadata = {
     default: "Intelix Tech Limited",
     template: "Intelix Tech Limited | %s",
   },
-  description: "Intelix Tech Limited - AI-Powered SaaS & Custom Software Development Company in Bangladesh.",
+  description:
+    "Intelix Tech Limited - AI-Powered SaaS & Custom Software Development Company in Bangladesh.",
   metadataBase: new URL("https://intelixtech.com"),
   keywords: [
     "Intelix Tech Limited",
@@ -50,17 +46,18 @@ export const metadata: Metadata = {
     "Next.js development",
     "React development company",
     "AI solutions Dhaka",
-    "Web development Bangladesh"
+    "Web development Bangladesh",
   ],
   openGraph: {
     title: "Intelix Tech Limited",
-    description: "We provide cutting-edge AI-powered SaaS and custom software solutions tailored for modern businesses.",
+    description:
+      "We provide cutting-edge AI-powered SaaS and custom software solutions tailored for modern businesses.",
     url: "https://intelixtech.com",
     siteName: "Intelix Tech Limited",
     type: "website",
     images: [
       {
-        url: "/og-image.png", 
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Intelix Tech Limited Website Preview",
@@ -71,9 +68,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Intelix Tech Limited",
-    description: "AI-powered SaaS & software development company in Bangladesh.",
+    description:
+      "AI-powered SaaS & software development company in Bangladesh.",
     images: ["/og-image.png"],
-    site: "@intelixtech", 
+    site: "@intelixtech",
   },
   icons: {
     icon: "/favicon.ico",
@@ -81,7 +79,6 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
 };
-
 
 export default function RootLayout({
   children,
@@ -93,11 +90,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <Navbar />
-      <div className="bg-[#0A0F2E]" >
-        {children}
-                <SpeedInsights />
-
+        <Navbar />
+        <div className="bg-[#0A0F2E]">
+          {children}
+          <SpeedInsights />
         </div>
 
         <Footer />
