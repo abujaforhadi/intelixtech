@@ -1,6 +1,8 @@
 "use client";
+
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 export interface ChromaItem {
   image: string;
@@ -183,9 +185,11 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
             }}
           />
           <div className="relative z-10 flex-1 p-[10px] box-border">
-            <img
+            <Image
               src={c.image}
               alt={c.title}
+              width={300}
+              height={300}
               loading="lazy"
               className="w-full h-full object-cover rounded-[10px]"
             />

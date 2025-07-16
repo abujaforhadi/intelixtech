@@ -6,7 +6,6 @@ import {
   Brain, 
   Shield, 
   Target, 
-  Users,
   CheckCircle,
   Lightbulb,
   Heart
