@@ -3,35 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// --- Self-Contained Components & Icons ---
 
-const ContainerTextFlip = ({ words }) => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2500);
-    return () => clearInterval(interval);
-  }, [words.length]);
-
-  return (
-    <span className="inline-block relative h-16 md:h-20 align-middle">
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={words[index]}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="absolute inset-0 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400"
-        >
-          {words[index]}
-        </motion.span>
-      </AnimatePresence>
-    </span>
-  );
-};
 
 const ArrowRightIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
