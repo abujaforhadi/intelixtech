@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, {  useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { ContainerTextFlip } from "../ui/container-text-flip";
 import Image from 'next/image';
 // --- Helper Components & Icons (Self-contained) ---
@@ -24,7 +24,6 @@ const CheckCircleIcon = ({ className }) => (
 
 // The main Hero Section component
 const HeroSection = () => {
-  const primaryColor = "#8B5CF6"; 
 
   return (
     <section className="relative overflow-hidden  text-white min-h-screen flex items-center">

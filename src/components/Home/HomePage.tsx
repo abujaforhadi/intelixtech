@@ -66,50 +66,7 @@ const StarIcon = ({ className }) => (
 );
 
 
-// --- Page Sections ---
 
-const HeroSection = () => (
-    <section className="relative overflow-hidden bg-[#0A0F2E] text-white min-h-screen flex items-center">
-        <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden z-0">
-            <div className="absolute w-[1000px] h-[1000px] -left-[200px] -top-[400px] bg-gradient-radial from-blue-600/30 to-transparent rounded-full animate-pulse-slow"></div>
-            <div className="absolute w-[800px] h-[800px] -right-[200px] -bottom-[300px] bg-gradient-radial from-purple-600/30 to-transparent rounded-full animate-pulse-slow animation-delay-2000"></div>
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <motion.div className="space-y-8" initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.2 } } }}>
-                    <motion.h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}>
-                        Power Your Business with{' '}
-                        <ContainerTextFlip words={["AI-Driven SaaS", "Custom Software", "Secure Solutions"]} />
-                    </motion.h1>
-                    <motion.p className="text-lg md:text-xl text-slate-300 max-w-2xl" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } } }}>
-                        We build intelligent, secure, and scalable software to fuel your business growth and transform your vision into reality.
-                    </motion.p>
-                    <motion.div className="flex flex-col sm:flex-row gap-4" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.4 } } }}>
-                        <motion.button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-lg hover:shadow-purple-500/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 focus:ring-offset-slate-900" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-                            Get a Free Quote
-                            <ArrowRightIcon className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" />
-                        </motion.button>
-                        <motion.button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white bg-white/5 rounded-lg border border-white/20 backdrop-blur-sm hover:bg-white/10 transition-all duration-300" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-                            Explore Solutions
-                        </motion.button>
-                    </motion.div>
-                    <motion.div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-4" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.6 } } }}>
-                        <div className="flex items-center space-x-2 text-slate-400"><CheckCircleIcon className="h-5 w-5 text-blue-400" /><span>Enterprise Security</span></div>
-                        <div className="flex items-center space-x-2 text-slate-400"><CheckCircleIcon className="h-5 w-5 text-blue-400" /><span>AI-Powered</span></div>
-                        <div className="flex items-center space-x-2 text-slate-400"><CheckCircleIcon className="h-5 w-5 text-blue-400" /><span>100% Custom</span></div>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="relative flex items-center justify-center" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1, transition: { duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] } }}>
-                    <div className="relative w-full max-w-md p-2 rounded-2xl bg-black/20 backdrop-blur-md border border-white/10 shadow-2xl shadow-purple-500/30">
-                        <img src="https://placehold.co/600x450/0A0F2E/8B5CF6?text=IntelixTech.ai" alt="AI-Powered Software Solutions" className="rounded-xl w-full h-auto" width={600} height={450} />
-                        <div className="absolute -top-4 -left-4 w-16 h-16 border-t-4 border-l-4 border-blue-400 rounded-tl-2xl animate-pulse-slow"></div>
-                        <div className="absolute -bottom-4 -right-4 w-16 h-16 border-b-4 border-r-4 border-purple-400 rounded-br-2xl animate-pulse-slow animation-delay-2000"></div>
-                    </div>
-                </motion.div>
-            </div>
-        </div>
-    </section>
-);
 
 const ServicesSection = ({ services }) => (
     <section className="py-20 bg-[#0A0F2E]">
@@ -204,7 +161,7 @@ const CtaSection = () => (
                 Ready to Transform Your Business?
             </motion.h2>
             <motion.p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto" initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.6 }} viewport={{ once: true }}>
-                Let's build your next big idea together. Contact us today for a free consultation and discover how our AI-powered solutions can accelerate your growth.
+                Let&apos;s build your next big idea together. Contact us today for a free consultation and discover how our AI-powered solutions can accelerate your growth.
             </motion.p>
             <motion.div initial={{ scale: 0.9, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }} viewport={{ once: true }}>
                  <motion.button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-purple-600 bg-white rounded-lg shadow-lg hover:bg-slate-200 transition-all duration-300" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -238,21 +195,7 @@ export default function App() {
         { name: "Emily Johnson", role: "Head of IT, MedCore Health", content: "The custom mobile app they developed for our healthcare platform exceeded all expectations. HIPAA compliant and user-friendly.", rating: 5 },
     ];
 
-    // Style injector for animations
-    const StyleInjector = () => {
-        useEffect(() => {
-            const style = document.createElement('style');
-            style.innerHTML = `
-                @keyframes pulse-slow { 0%, 100% { opacity: 0.4; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.05); } }
-                .animate-pulse-slow { animation: pulse-slow 8s infinite ease-in-out; }
-                .animation-delay-2000 { animation-delay: -2s; }
-                .bg-gradient-radial { background-image: radial-gradient(circle, var(--tw-gradient-stops)); }
-            `;
-            document.head.appendChild(style);
-            return () => { document.head.removeChild(style); };
-        }, []);
-        return null;
-    };
+   
 
     return (
         <div className="bg-[#0A0F2E]">
