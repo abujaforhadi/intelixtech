@@ -1,31 +1,23 @@
-"use client"; // This directive makes the component a Client Component in Next.js
+"use client";
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   ArrowRight,
   Brain,
-  Code,
   Shield,
   CheckCircle,
   Star,
   Zap,
-  Users,
   Target,
-  Award,
 } from "lucide-react";
-import Image from "next/image"; // Import the Next.js Image component
+import Image from "next/image";
 import { motion } from "framer-motion";
 
-// Import your local image assets
 import heroImage from "@/assets/hero-ai-tech.jpg";
-import servicesBackground from "@/assets/services-background.jpg"; // Note: This image is imported but not used in the provided JSX.
 import aiSaasIcon from "@/assets/ai-saas-icon.jpg";
 import customDevIcon from "@/assets/custom-dev-icon.jpg";
 import securityIcon from "@/assets/security-icon.jpg";
-
-// Assuming you have a Navigation component
 
 const HomePage = () => {
   const services = [
@@ -99,7 +91,7 @@ const HomePage = () => {
       name: "Sarah Chen",
       role: "CTO, TechFlow Inc.",
       content:
-        "IntelixTech transformed our operations with their AI-powered SaaS solution. We've seen a 40% increase in efficiency across all departments.",
+        "IntelixTech transformed our operations with their AI-powered SaaS solution. We&apos;ve seen a 40% increase in efficiency across all departments.",
       rating: 5,
     },
     {

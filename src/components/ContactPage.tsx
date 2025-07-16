@@ -45,7 +45,7 @@ const ContactPage = () => {
       icon: Clock,
       title: "Business Hours",
       details: ["Mon - Fri: 9:00 AM - 6:00 PM PST", "Weekend: By appointment"],
-      description: "We're here when you need us",
+      description: "We&apos;re here when you need us",
     },
   ];
 
@@ -68,7 +68,7 @@ const ContactPage = () => {
 
     toast({
       title: "Message Sent Successfully!",
-      description: "We'll get back to you within 24 hours.",
+      description: "We&apos;ll get back to you within 24 hours.",
     });
 
     setIsSubmitting(false);
@@ -84,12 +84,10 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              Let's Build Your Next{" "}
-              <span className="text-gradient-tech">Big Idea</span>
+              Let&apos;s Build Your Next <span className="text-gradient-tech">Big Idea</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to transform your business with AI-powered solutions? Contact
-              us today for a free consultation and discover the possibilities.
+              Ready to transform your business with AI-powered solutions? Contact us today for a free consultation and discover the possibilities.
             </p>
           </div>
         </div>
@@ -103,11 +101,9 @@ const ContactPage = () => {
             <div>
               <Card className="card-elegant">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-heading">
-                    Send us a Message
-                  </CardTitle>
+                  <CardTitle className="text-2xl font-heading">Send us a Message</CardTitle>
                   <p className="text-muted-foreground">
-                    Fill out the form below and we'll get back to you within 24 hours.
+                    Fill out the form below and we&apos;ll get back to you within 24 hours.
                   </p>
                 </CardHeader>
                 <CardContent>
@@ -125,12 +121,7 @@ const ContactPage = () => {
 
                     <div>
                       <Label htmlFor="email">Email Address</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="john@company.com"
-                        required
-                      />
+                      <Input id="email" type="email" placeholder="john@company.com" required />
                     </div>
 
                     <div>
@@ -140,11 +131,7 @@ const ContactPage = () => {
 
                     <div>
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="+1 (555) 123-4567"
-                      />
+                      <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" />
                     </div>
 
                     <div>
@@ -175,7 +162,7 @@ const ContactPage = () => {
                         <option value="50k-100k">$50,000 - $100,000</option>
                         <option value="100k-250k">$100,000 - $250,000</option>
                         <option value="over-250k">Over $250,000</option>
-                        <option value="discuss">Let's discuss</option>
+                        <option value="discuss">Let&apos;s discuss</option>
                       </select>
                     </div>
 
@@ -220,8 +207,7 @@ const ContactPage = () => {
                   Get in <span className="text-gradient-primary">Touch</span>
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  We&apos;re here to help you transform your business with innovative
-                  technology solutions. Choose the best way to reach us.
+                  We&apos;re here to help you transform your business with innovative technology solutions. Choose the best way to reach us.
                 </p>
               </div>
 
@@ -292,28 +278,23 @@ const ContactPage = () => {
             {[
               {
                 question: "How long does a typical project take?",
-                answer:
-                  "Project timelines vary based on complexity. Simple projects take 2-4 months, complex ones up to 12 months.",
+                answer: "Project timelines vary based on complexity. Simple projects take 2-4 months, complex ones up to 12 months.",
               },
               {
                 question: "Do you provide ongoing support and maintenance?",
-                answer:
-                  "Yes, we offer support packages including updates, security, and performance monitoring.",
+                answer: "Yes, we offer support packages including updates, security, and performance monitoring.",
               },
               {
                 question: "Can you work with our existing technology stack?",
-                answer:
-                  "Absolutely! We’re experienced with various tech stacks and integrations.",
+                answer: "Absolutely! We&apos;re experienced with various tech stacks and integrations.",
               },
               {
                 question: "How do you ensure data security and compliance?",
-                answer:
-                  "We implement secure coding practices and comply with GDPR, HIPAA, and SOC 2.",
+                answer: "We implement secure coding practices and comply with GDPR, HIPAA, and SOC 2.",
               },
               {
-                question: "What's included in your free consultation?",
-                answer:
-                  "We analyze requirements, recommend tech, give time/budget estimates, and provide a proposal.",
+                question: "What&apos;s included in your free consultation?",
+                answer: "We analyze requirements, recommend tech, give time/budget estimates, and provide a proposal.",
               },
             ].map((faq, index) => (
               <Card key={index} className="card-elegant">
@@ -341,8 +322,7 @@ const ContactPage = () => {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Take the first step towards transforming your business. Our team is
-            ready to turn your vision into reality.
+            Take the first step towards transforming your business. Our team is ready to turn your vision into reality.
           </p>
           <Button
             variant="secondary"
