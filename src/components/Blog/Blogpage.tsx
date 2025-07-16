@@ -67,9 +67,9 @@ const BlogPage = () => {
         setFilteredPosts(posts);
     }, [searchTerm, selectedCategory]);
 
-    const handleCategorySelect = (categoryName) => {
-        setSelectedCategory(categoryName);
-    };
+    const handleCategorySelect = (categoryName: string) => {
+  setSelectedCategory(categoryName);
+};
     
     const clearFilters = () => {
         setSelectedCategory(null);
