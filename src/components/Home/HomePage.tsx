@@ -17,7 +17,20 @@ type Service = {
   description: string;
   features: string[];
 };
+import { LucideIcon } from "lucide-react";
 
+type Benefit = {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+type Testimonial = {
+  name: string;
+  role: string;
+  content: string;
+  rating: number;
+};
 const ServicesSection = ({ services }: { services: Service[] }) => (
   <section className="py-20 bg-[#0A0F2E]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,7 +101,8 @@ const ServicesSection = ({ services }: { services: Service[] }) => (
   </section>
 );
 
-const BenefitsSection = ({ benefits }) => (
+const BenefitsSection = ({ benefits }: { benefits: Benefit[] }) => (
+
   <section className="py-20 bg-[#0A0F2E]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.div
@@ -141,7 +155,7 @@ const BenefitsSection = ({ benefits }) => (
   </section>
 );
 
-const TestimonialsSection = ({ testimonials }) => (
+const TestimonialsSection = ({ testimonials }: { testimonials: Testimonial[] }) => (
   <section className="py-20 bg-black/20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.div
