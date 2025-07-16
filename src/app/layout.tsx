@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 <Script
   id="ld-json"
@@ -94,6 +96,8 @@ export default function RootLayout({
       <Navbar />
       <div className="bg-[#0A0F2E]" >
         {children}
+                <SpeedInsights />
+
         </div>
 
         <Footer />
