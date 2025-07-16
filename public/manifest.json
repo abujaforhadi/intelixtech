@@ -1,0 +1,21 @@
+{
+  "name": "Intelix Tech Limited",
+  "short_name": "IntelixTech",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#90caf9",
+  "description": "Intelix Tech Limited - AI-powered SaaS & Software Company",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
