@@ -254,7 +254,7 @@ const Portfolio = () => {
                         <Calendar className="h-4 w-4 mr-1" />
                         {project.timeline}
                       </div>
-                      <Button variant="secondaryOutline" className="group">
+                      <Button variant="outline" className="group">
                         View Details
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
@@ -341,10 +341,10 @@ const Portfolio = () => {
             AI-powered solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="xl" className="bg-white text-primary hover:bg-white/90">
+            <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90">
               Start Your Project
             </Button>
-            <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
               Download Case Studies
             </Button>
           </div>

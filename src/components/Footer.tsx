@@ -64,15 +64,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center text-muted-foreground">
                 <Mail className="h-4 w-4 mr-2" />
-                hello@intelixtech.com
+                info@intelixtech.com
               </li>
               <li className="flex items-center text-muted-foreground">
                 <Phone className="h-4 w-4 mr-2" />
-                +1 (555) 123-4567
+                +880 1306080440
               </li>
               <li className="flex items-center text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-2" />
-                San Francisco, CA
+                Dhaka, Bangladesh
               </li>
             </ul>
           </div>

@@ -50,7 +50,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button variant="hero" size="sm">
+            <Button variant="outline" size="sm">
               Get Started
             </Button>
           </div>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 );
               })}
               <div className="px-3 pt-2">
-                <Button variant="hero" size="sm" className="w-full">
+                <Button variant="outline" size="sm" className="w-full">
                   Get Started
                 </Button>
               </div>

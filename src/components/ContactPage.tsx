@@ -15,30 +15,28 @@ import {
   Calendar,
   CheckCircle,
 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 
 const ContactPage = () => {
-  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const contactInfo = [
     {
       icon: Mail,
       title: "Email Us",
-      details: ["hello@intelixtech.com", "support@intelixtech.com"],
+      details: ["info@intelixtech.com"],
       description: "Get in touch via email for detailed inquiries",
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568"],
+      details: ["+880 1306080440"],
       description: "Speak directly with our team",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["123 Tech Street", "San Francisco, CA 94105"],
+      details: [ "Dhaka, Bangladesh"],
       description: "Schedule an in-person meeting",
     },
     {
@@ -66,10 +64,7 @@ const ContactPage = () => {
 
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    toast({
-      title: "Message Sent Successfully!",
-      description: "We&apos;ll get back to you within 24 hours.",
-    });
+  
 
     setIsSubmitting(false);
 
@@ -178,7 +173,7 @@ const ContactPage = () => {
 
                     <Button
                       type="submit"
-                      variant="hero"
+                      variant="outline"
                       size="lg"
                       className="w-full"
                       disabled={isSubmitting}
@@ -243,15 +238,15 @@ const ContactPage = () => {
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold">Quick Actions</h3>
                 <div className="space-y-3">
-                  <Button variant="secondaryOutline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start">
                     <Calendar className="mr-2 h-4 w-4" />
                     Schedule a Consultation
                   </Button>
-                  <Button variant="secondaryOutline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start">
                     <MessageSquare className="mr-2 h-4 w-4" />
                     Start Live Chat
                   </Button>
-                  <Button variant="secondaryOutline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start">
                     <Phone className="mr-2 h-4 w-4" />
                     Request a Callback
                   </Button>
@@ -326,7 +321,7 @@ const ContactPage = () => {
           </p>
           <Button
             variant="secondary"
-            size="xl"
+            size="lg"
             className="bg-white text-primary hover:bg-white/90"
           >
             Get Your Free Quote Today

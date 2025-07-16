@@ -204,7 +204,7 @@ const Services = () => {
                       <p className="text-sm text-muted-foreground">Starting from</p>
                       <p className="text-2xl font-bold text-gradient-primary">{service.pricing}</p>
                     </div>
-                    <Button variant="hero" className="group">
+                    <Button variant="outline" className="group">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -304,10 +304,10 @@ const Services = () => {
             your business forward.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="xl" className="bg-white text-primary hover:bg-white/90">
+            <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90">
               Get Free Consultation
             </Button>
-            <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
               Request Quote
             </Button>
           </div>

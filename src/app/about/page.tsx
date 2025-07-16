@@ -231,7 +231,7 @@ const About = () => {
             Let&aposs discuss how our expertise can help transform your business with 
             innovative AI-powered solutions.
           </p>
-          <Button variant="secondary" size="xl" className="bg-white text-primary hover:bg-white/90">
+          <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90">
             Start a Conversation
           </Button>
         </div>

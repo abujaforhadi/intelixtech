@@ -182,7 +182,7 @@ const HomePage = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button variant="hero" size="xl" className="group">
+                  <Button variant="outline" size="lg" className="group">
                     Get a Free Quote
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -191,7 +191,7 @@ const HomePage = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button variant="secondaryOutline" size="xl">
+                  <Button variant="outline" size="lg">
                     Explore Our Solutions
                   </Button>
                 </motion.div>
@@ -489,7 +489,7 @@ const HomePage = () => {
             transition={{ delay: 0.5, duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <Button size="lg" variant="secondaryOutline" className="mx-auto">
+            <Button size="lg" variant="outline" className="mx-auto">
               Contact Us
             </Button>
           </motion.div>

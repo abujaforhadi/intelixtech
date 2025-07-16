@@ -198,7 +198,7 @@ const Blog = () => {
                     </div>
                   </div>
                   
-                  <Button variant="hero" className="group">
+                  <Button variant="outline" className="group">
                     Read Article
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -284,7 +284,7 @@ const Blog = () => {
               
               {/* Load More */}
               <div className="text-center mt-12">
-                <Button variant="secondaryOutline" size="lg">
+                <Button variant="outline" size="lg">
                   Load More Articles
                 </Button>
               </div>
@@ -328,7 +328,7 @@ const Blog = () => {
                       placeholder="Your email address"
                       className="w-full px-3 py-2 border border-border rounded-lg text-sm"
                     />
-                    <Button variant="hero" size="sm" className="w-full">
+                    <Button variant="outline" size="sm" className="w-full">
                       Subscribe
                     </Button>
                   </div>
@@ -363,7 +363,7 @@ const Blog = () => {
             Let our expertise guide your next project. Contact us for a free consultation 
             and discover how we can help you achieve your goals.
           </p>
-          <Button variant="secondary" size="xl" className="bg-white text-primary hover:bg-white/90">
+          <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90">
             Start Your Project Today
           </Button>
         </div>
