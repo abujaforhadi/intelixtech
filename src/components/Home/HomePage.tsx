@@ -18,6 +18,7 @@ type Service = {
   features: string[];
 };
 import { LucideIcon } from "lucide-react";
+import Link from "next/link";
 
 type Benefit = {
   icon: LucideIcon;
@@ -251,13 +252,15 @@ const CtaSection = () => (
         transition={{ delay: 0.5, duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <motion.button
-          className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-purple-600 bg-white rounded-lg shadow-lg hover:bg-slate-200 transition-all duration-300"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Contact Us <ArrowRight className="ml-2 h-5 w-5" />
-        </motion.button>
+        <Link href="/contact" >
+  <motion.button
+    className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-purple-600 bg-white rounded-lg shadow-lg hover:bg-slate-200 transition-all duration-300"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    Contact Us <ArrowRight className="ml-2 h-5 w-5" />
+  </motion.button>
+</Link>
       </motion.div>
     </div>
   </motion.section>

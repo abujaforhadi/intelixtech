@@ -47,7 +47,7 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: "Md. Rimon Mia",
+      name: "Md. Rimon",
       role: "Managing Director & Founder",
       avatar: "https://placehold.co/128x128/8B5CF6/FFFFFF?text=A",
     },
