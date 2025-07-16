@@ -47,23 +47,25 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: "Jhonier",
-      role: "Founder & CEO",
+      name: "Md. Rimon Mia",
+      role: "Managing Director & Founder",
       avatar: "https://placehold.co/128x128/8B5CF6/FFFFFF?text=A",
     },
     {
-      name: "Jane Doe",
-      role: "Lead Developer",
-      avatar: "https://placehold.co/128x128/3B82F6/FFFFFF?text=J",
+      name: "Abid Ahmad",
+      role: "Technical Advisor & Operations Manager",
+            avatar: "https://placehold.co/128x128/FFFFFF/0A0F2E?text=S",
+
     },
     {
-      name: "Sam Wilson",
-      role: "AI Specialist",
-      avatar: "https://placehold.co/128x128/FFFFFF/0A0F2E?text=S",
+      name: "Md. Abu Jafor",
+      role: "CTO & Co-Founder",
+            avatar: "/teamss/jafor.JPG",
+
     },
     {
-      name: "Emily Carter",
-      role: "UX/UI Designer",
+      name: "Mahbub Hasan",
+      role: "Tech Lead & Software Engineer(AI and ML)",
       avatar: "https://placehold.co/128x128/EC4899/FFFFFF?text=E",
     },
   ];
@@ -249,9 +251,9 @@ const AboutPage = () => {
                 <Image
                   src={member.avatar}
                   alt={member.name}
-                  width={128}
-                  height={128}
-                  className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-purple-500/50 shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  width={240}
+                  height={240}
+                  className="w-64 h-64 rounded-full mx-auto mb-4 border-4 border-purple-500/50 shadow-lg transform group-hover:scale-105 transition-transform duration-300"
                   unoptimized
                 />
                 <h3 className="text-lg font-semibold text-white mt-4">
