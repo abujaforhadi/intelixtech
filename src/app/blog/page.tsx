@@ -22,7 +22,7 @@ const Blog = () => {
     id: 1,
     title: "How AI Can Transform Your SaaS Product in 2024",
     excerpt: "Discover the latest AI technologies that are revolutionizing SaaS applications and learn how to implement them in your business to drive growth and efficiency.",
-    content: "Artificial Intelligence is no longer a futuristic concept—it's a present reality that's transforming businesses across industries...",
+    content: "Artificial Intelligence is no longer a futuristic concept—it&aposs a present reality that&aposs transforming businesses across industries...",
     author: "Alex Chen",
     role: "CEO & AI Architect",
     date: "December 10, 2024",

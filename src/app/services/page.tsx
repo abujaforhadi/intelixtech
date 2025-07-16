@@ -20,6 +20,7 @@ import customDevIcon from "@/assets/custom-dev-icon.jpg";
 import securityIcon from "@/assets/security-icon.jpg";
 import servicesBackground from "@/assets/services-background.jpg";
 import { Metadata } from "next";
+import Image from 'next/image';
 export const metadata: Metadata = {
   title: "Services",
 };
@@ -151,9 +152,11 @@ const Services = () => {
             {mainServices.map((service, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <img 
+                  <Image 
                     src={service.icon} 
                     alt={service.title}
+                    width={200}
+                    height={200}
                     className="w-20 h-20 rounded-2xl shadow-lg mb-6"
                   />
                   <h2 className="text-3xl font-heading font-bold mb-4">{service.title}</h2>

@@ -220,7 +220,7 @@ const ContactPage = () => {
                   Get in <span className="text-gradient-primary">Touch</span>
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  We're here to help you transform your business with innovative
+                  We&apos;re here to help you transform your business with innovative
                   technology solutions. Choose the best way to reach us.
                 </p>
               </div>

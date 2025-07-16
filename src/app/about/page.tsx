@@ -35,7 +35,7 @@ const About = () => {
     {
       icon: Heart,
       title: "Client Success",
-      description: "Your success is our mission. We're committed to delivering solutions that drive real business value and long-term growth."
+      description: "Your success is our mission. We&aposre committed to delivering solutions that drive real business value and long-term growth."
     }
   ];
 
@@ -114,7 +114,7 @@ const About = () => {
               </p>
               <p className="text-lg text-muted-foreground mb-8">
                 We specialize in creating AI-powered SaaS products and custom software solutions 
-                that not only meet today's needs but are built to scale with your future growth.
+                that not only meet today&aposs needs but are built to scale with your future growth.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -229,7 +229,7 @@ const About = () => {
             Ready to Work Together?
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Let's discuss how our expertise can help transform your business with 
+            Let&aposs discuss how our expertise can help transform your business with 
             innovative AI-powered solutions.
           </p>
           <Button variant="secondary" size="xl" className="bg-white text-primary hover:bg-white/90">

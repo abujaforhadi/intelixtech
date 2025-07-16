@@ -150,7 +150,7 @@ const Portfolio = () => {
               Our <span className="text-gradient-tech">Success Stories</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Discover how we've helped businesses transform with AI-powered solutions, 
+              Discover how we&aposve helped businesses transform with AI-powered solutions, 
               custom software, and secure development practices.
             </p>
             
