@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { 
   BrainIcon,ShieldIcon,CodeIcon,TrendingUpIcon,SearchIcon,
   CalendarIcon,ClockIcon,UserIcon,ArrowRightIcon,XCircleIcon
@@ -38,7 +39,7 @@ const categories = [
     { name: "Mobile Development", count: 4, icon: TrendingUpIcon },
     { name: "Architecture", count: 3, icon: TrendingUpIcon },
     { name: "Compliance", count: 2, icon: TrendingUpIcon },
-    
+
 ];
 
 const popularTags = ["AI", "SaaS", "Security", "React", "Mobile", "Cloud", "Analytics", "GDPR", "Performance", "Architecture"];
@@ -118,7 +119,7 @@ const BlogPage = () => {
                     <motion.div className="bg-black/20 border border-white/10 rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/10" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
                         <div className="grid grid-cols-1 lg:grid-cols-2">
                             <div className="relative h-80 lg:h-auto">
-                                <img src={featuredPost.image} alt={featuredPost.title} className="w-full h-full object-cover"/>
+                                <Image src={featuredPost.image} alt={featuredPost.title} width={500} height={300} className="w-full h-full object-cover"/>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="absolute top-4 left-4">
                                     <span className="bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full border border-white/20 backdrop-blur-sm">Featured</span>
@@ -186,7 +187,7 @@ const BlogPage = () => {
                                 {filteredPosts.length > 0 ? filteredPosts.map((post) => (
                                     <motion.div key={post.id} className="bg-black/30 border border-white/10 rounded-2xl overflow-hidden shadow-lg shadow-purple-500/5 hover:shadow-purple-500/20 transition-all duration-300 group" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
                                         <div className="relative h-48 overflow-hidden">
-                                            <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                                            <Image src={post.image} alt={post.title} width={500} height={300} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                                             <span className="absolute top-4 left-4 bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full border border-white/20 backdrop-blur-sm">{post.category}</span>
                                         </div>
