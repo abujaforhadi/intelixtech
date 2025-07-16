@@ -164,7 +164,7 @@ const allTechnologies = ["React", "Node.js", "Python", "TensorFlow", "AWS", "Pos
           Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Success Stories</span>
         </motion.h1>
         <motion.p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-300 leading-relaxed mb-12" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
-          Discover how we've helped businesses transform with AI-powered solutions, custom software, and secure development practices.
+          Discover how we&apos;ve helped businesses transform with AI-powered solutions, custom software, and secure development practices.
         </motion.p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           {stats.map((stat, index) => {
