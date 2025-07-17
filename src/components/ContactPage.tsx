@@ -17,7 +17,7 @@ const contactInfo = [
     { icon: ClockIcon, title: "Business Hours", details: ["Mon - Fri: 9:00 AM - 6:00 PM"], description: "We&apos;re here when you need us" },
 ];
 
-const services = ["AI-Powered SaaS Development", "Custom Web Applications", "Mobile App Development", "Security Consulting", "Data Analytics Solutions", "Legacy System Modernization", "Cloud Migration", "Performance Optimization"];
+// const services = ["AI-Powered SaaS Development", "Custom Web Applications", "Mobile App Development", "Security Consulting", "Data Analytics Solutions", "Legacy System Modernization", "Cloud Migration", "Performance Optimization"];
 
 const faqs = [
     { question: "How long does a typical project take?", answer: "Project timelines vary based on complexity. Simple projects can take 2-4 months, while more complex enterprise-level solutions may take up to 12 months. We provide a detailed timeline after the initial consultation." },
@@ -33,7 +33,7 @@ const ContactPage = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [openFaq, setOpenFaq] = useState(null);
 
-    const handleSubmit = async (e) => {
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
         await new Promise((resolve) => setTimeout(resolve, 1500));
