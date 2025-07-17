@@ -31,7 +31,7 @@ const faqs = [
 const ContactPage = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
-    const [openFaq, setOpenFaq] = useState(null);
+const [openFaq, setOpenFaq] = useState<number | null>(null);
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
