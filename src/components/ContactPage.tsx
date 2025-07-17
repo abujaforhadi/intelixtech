@@ -34,15 +34,18 @@ const ContactPage = () => {
     const [openFaq, setOpenFaq] = useState(null);
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        const form = e.target;
-        form.reset();
-        setTimeout(() => setIsSubmitted(false), 5000);
-    };
+    e.preventDefault();
+    setIsSubmitting(true);
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+
+    const form = e.target as HTMLFormElement;
+    form.reset();
+
+    setTimeout(() => setIsSubmitted(false), 5000);
+};
+
 
     return (
         <div className="bg-[#0A0F2E] text-white min-h-screen">
