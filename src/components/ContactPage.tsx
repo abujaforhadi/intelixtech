@@ -3,18 +3,18 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MailIcon, PhoneIcon, MapPinIcon, ClockIcon, CheckCircleIcon, SendIcon, ChevronDownIcon } from 'lucide-react';
-interface ContactFormInputs {
-  name: string
-  email: string
-  subject: string
-  message: string
-}
+// interface ContactFormInputs {
+//   name: string
+//   email: string
+//   subject: string
+//   message: string
+// }
 // --- Data for the page ---
 const contactInfo = [
     { icon: MailIcon, title: "Email Us", details: ["info@intelixtech.com"], description: "Get in touch for detailed inquiries" },
     { icon: PhoneIcon, title: "Call Us", details: ["+880 1306080440"], description: "Speak directly with our team" },
     { icon: MapPinIcon, title: "Visit Us", details: ["Dhaka, Bangladesh"], description: "Schedule an in-person meeting" },
-    { icon: ClockIcon, title: "Business Hours", details: ["Mon - Fri: 9:00 AM - 6:00 PM"], description: "We're here when you need us" },
+    { icon: ClockIcon, title: "Business Hours", details: ["Mon - Fri: 9:00 AM - 6:00 PM"], description: "We&apos;re here when you need us" },
 ];
 
 const services = ["AI-Powered SaaS Development", "Custom Web Applications", "Mobile App Development", "Security Consulting", "Data Analytics Solutions", "Legacy System Modernization", "Cloud Migration", "Performance Optimization"];
@@ -24,7 +24,7 @@ const faqs = [
     { question: "Do you provide ongoing support and maintenance?", answer: "Yes, we offer flexible support and maintenance packages to ensure your application remains secure, up-to-date, and performs optimally post-launch." },
     { question: "Can you work with our existing technology stack?", answer: "Absolutely. Our team is experienced with a wide range of technologies and can seamlessly integrate with your existing systems and infrastructure." },
     { question: "How do you ensure data security and compliance?", answer: "Security is at the core of our development process. We follow industry best practices, conduct regular security audits, and ensure compliance with standards like GDPR, HIPAA, and SOC 2." },
-    { question: "What's included in your free consultation?", answer: "Our free consultation includes a deep dive into your project requirements, a discussion of potential technology solutions, and a preliminary estimate of the project timeline and budget." },
+    { question: "What&apos;s included in your free consultation?", answer: "Our free consultation includes a deep dive into your project requirements, a discussion of potential technology solutions, and a preliminary estimate of the project timeline and budget." },
 ];
 
 // --- Contact Page Component ---
@@ -54,7 +54,7 @@ const ContactPage = () => {
                     className="text-5xl font-extrabold tracking-tight max-w-4xl mx-auto mb-6"
                     initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
                 >
-                    Let's Build Your Next <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-300">Big Idea</span>
+                    Let&apos;s Build Your Next <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-300">Big Idea</span>
                 </motion.h1>
                 <motion.p 
                     className="max-w-3xl mx-auto text-lg md:text-xl text-slate-300 leading-relaxed"
@@ -72,7 +72,7 @@ const ContactPage = () => {
                         <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
                             <div className="bg-black/20 border border-white/10 rounded-2xl p-8 shadow-2xl shadow-purple-500/10 h-full">
                                 <h2 className="text-3xl font-bold mb-2">Send us a Message</h2>
-                                <p className="text-slate-400 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+                                <p className="text-slate-400 mb-8">Fill out the form below and we&apos;ll get back to you within 24 hours.</p>
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <input id="name" placeholder="Your Name" required className="w-full px-4 py-2 bg-black/30 border border-white/10 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent placeholder-slate-500"/>
