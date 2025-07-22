@@ -14,11 +14,11 @@
     "jsx": "preserve",
     "jsxImportSource": "react",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "outDir": "./dist",
+
+    "plugins": [{
+      "name": "next"
+    }],
     "paths": {
       "@/*": ["./src/*"]
     }
