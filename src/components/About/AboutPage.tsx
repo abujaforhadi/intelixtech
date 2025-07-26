@@ -129,7 +129,13 @@ const AboutPage = () => {
             >
               <div className="absolute w-72 h-72 bg-gradient-to-br from-blue-600/40 to-purple-600/40 rounded-full blur-3xl"></div>
               <div className="relative w-64 h-64 border-4 border-purple-500/30 rounded-full flex items-center justify-center">
-                 <Brain className="h-40 w-40 text-purple-400/80" />
+<Image
+                src="/logo.png"
+                width={520}
+                height={520}
+                alt="Intelix Tech Limited"
+                className="w-full h-full object-cover rounded-full"
+              />              
               </div>
             </motion.div>
              <motion.div

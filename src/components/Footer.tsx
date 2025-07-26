@@ -7,6 +7,7 @@ import {
   PhoneIcon,
   MapPinIcon,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -17,10 +18,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Branding Section */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <BrainIcon className="h-5 w-5 text-white" />
-              </div>
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 flex items-center justify-center shrink-0">
+              <Image
+                src="/logo.png"
+                width={40}
+                height={40}
+                alt="Intelix Tech Limited"
+              />
+            </div>
               <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
                 Intelix Tech Limited
               </span>

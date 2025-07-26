@@ -1,11 +1,20 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Brain, Code, Shield, Users, Phone, BookOpen } from "lucide-react";
+import {
+  Menu,
+  X,
+  Brain,
+  Code,
+  Shield,
+  Users,
+  Phone,
+  BookOpen,
+} from "lucide-react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 const navItems = [
   { name: "Home", path: "/", icon: Brain },
   { name: "About", path: "/about", icon: Users },
@@ -27,8 +36,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <Brain className="h-5 w-5 text-white" />
+            <div className="w-10 h-10 flex items-center justify-center shrink-0">
+              <Image
+                src="/logo.png"
+                width={40}
+                height={40}
+                alt="Intelix Tech Limited"
+              />
             </div>
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
               Intelix Tech Limited
@@ -69,7 +83,11 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-300 hover:text-white"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
