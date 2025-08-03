@@ -33,7 +33,7 @@ type Testimonial = {
   rating: number;
 };
 const ServicesSection = ({ services }: { services: Service[] }) => (
-  <section className="py-20 bg-[#0A0F2E]">
+  <section className="py-20 bg-[#0a0f2ef0]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.div
         className="text-center mb-16"
@@ -104,7 +104,7 @@ const ServicesSection = ({ services }: { services: Service[] }) => (
 
 const BenefitsSection = ({ benefits }: { benefits: Benefit[] }) => (
 
-  <section className="py-20 bg-[#0A0F2E]">
+  <section className="py-20 bg-[#0a0f2ef0]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.div
         className="text-center mb-16"
@@ -349,7 +349,7 @@ export default function App() {
   ];
 
   return (
-    <div className="bg-[#0A0F2E]">
+    <div className="bg-[#0a0f2ef0]">
       <ServicesSection services={services} />
       <BenefitsSection benefits={benefits} />
       <TestimonialsSection testimonials={testimonials} />

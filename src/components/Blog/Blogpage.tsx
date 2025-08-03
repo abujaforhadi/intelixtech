@@ -168,11 +168,11 @@ const BlogPage = () => {
   };
 
   return (
-    <div className="bg-[#0A0F2E] text-white min-h-screen">
+    <div className="bg-[#0a0f2ef0] text-white min-h-screen">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden text-center px-6 md:px-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/40 via-[#0A0F2E] to-[#0A0F2E] -z-10"></div>
-        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#0A0F2E] to-transparent -z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/40 via-[#0a0f2ef0] to-[#0a0f2ef0] -z-10"></div>
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#0a0f2ef0] to-transparent -z-10"></div>
         <motion.h1
           className="text-5xl font-extrabold tracking-tight max-w-4xl mx-auto mb-6"
           initial={{ opacity: 0, y: 20 }}
@@ -507,7 +507,7 @@ export default function Bloges() {
   };
 
   return (
-    <div className="bg-[#0A0F2E]">
+    <div className="bg-[#0a0f2ef0]">
       <StyleInjector />
       <BlogPage />
     </div>

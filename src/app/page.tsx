@@ -2,7 +2,7 @@ import HomePage from "@/components/Home/HomePage";
 import HeroSection from "@/components/Home/HeroSection";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Intelix Tech Limited | Home",
+  title: "Home | Intelix Tech Limited",
 };
 export default function Home() {
   return (

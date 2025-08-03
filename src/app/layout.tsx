@@ -34,7 +34,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Intelix Tech Limited",
-    template: "Intelix Tech Limited | %s",
+    template: "%s | Intelix Tech Limited ",
   },
   description:
     "Intelix Tech Limited - AI-Powered SaaS & Custom Software Development Company in Bangladesh.",
@@ -91,7 +91,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className="bg-[#0A0F2E]">
+        <div className="bg-[#0a0f2ef0]">
           {children}
           <SpeedInsights />
         </div>

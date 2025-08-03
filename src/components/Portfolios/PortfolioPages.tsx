@@ -157,7 +157,7 @@ const allTechnologies = ["React", "Node.js", "Python", "TensorFlow", "AWS", "Pos
 
  const PortfolioPage = () => {
   return (
-    <div className="bg-[#0A0F2E] text-white min-h-screen">
+    <div className="bg-[#0a0f2ef0] text-white min-h-screen">
       {/* Hero Section */}
       <section className="py-24 text-center px-6 md:px-0">
         <motion.h1 className="text-5xl font-extrabold tracking-tight max-w-4xl mx-auto mb-6 text-white" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -313,7 +313,7 @@ export default function Portfolios() {
   };
 
   return (
-    <div className="bg-[#0A0F2E]">
+    <div className="bg-[#0a0f2ef0]">
       <StyleInjector />
       <PortfolioPage />
     </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#0A0F2E]/90 backdrop-blur-sm border-b border-white/10">
+    <nav className="sticky top-0 z-50 bg-[#0a0f2ef0]/90 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -57,7 +57,7 @@ const Navbar = () => {
                 href={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   isActive(item.path)
-                    ? "text-white font-semibold bg-[#0A0F2E]"
+                    ? "text-white font-semibold bg-[#0a0f2ef0]"
                     : "text-slate-300 hover:text-purple-400"
                 }`}
               >

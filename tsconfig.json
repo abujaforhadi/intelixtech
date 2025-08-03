@@ -14,7 +14,7 @@
     "jsx": "preserve",
     "jsxImportSource": "react",
     "incremental": true,
-    "outDir": "./dist",
+    "outDir": "./dist/",
 
     "plugins": [{
       "name": "next"

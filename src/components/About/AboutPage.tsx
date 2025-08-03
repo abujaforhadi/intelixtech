@@ -71,7 +71,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="bg-[#0A0F2E] text-white pt-16 overflow-hidden">
+    <div className="bg-[#0a0f2ef0] text-white pt-16 overflow-hidden">
       {/* Hero Section */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
